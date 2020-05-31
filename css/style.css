@@ -1,11 +1,16 @@
 body{
-    /*overflow: hidden;*/
+    font-family: "Helvetica Neue",
+    Arial,
+    "Hiragino Kaku Gothic ProN",    
+    "Hiragino Sans",
+    Meiryo,
+    sans-serif;
     text-align: center;
-    font-size: 30px;
+    font-size: 1.4rem;
     max-width: 1200px;
     margin: auto;
-    background-color: #003150;
-    color: #FFFFFF;
+    background-color: #FFFFFF;
+    color: #000000;
 }
 #header{
     position: relative;
@@ -29,28 +34,61 @@ body{
     padding:0;
 }
 
+h2{
+    font-weight: bold;
+    display: inline-block;
+    border-bottom: solid 2px #2d7eff;
+}
+a{
+    text-decoration: none;
+}
+
+#name{
+    color: gray;
+    font-size: 1rem;
+}
 .flex{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     grid-auto-rows: 1fr;
     grid-gap: 0.8em;
-    border: 1px solid #ddd;
-    padding: 0.8em;
-    margin: 0 0 2em;
 }
 
+.box{
+    box-shadow: 0 2px 5px #ccc;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    padding-bottom: 8%;
+}
 
-#about > img{
-    margin: auto;
+#about > div > img{
     width: 50%;
 }
 
+#img {
+    padding: auto;
+    margin: auto;
+    display: inline-block;
+    color: gray;
+    font-size: 50%;
+}
 #about > div > table{
     text-align: center;
+    padding: 5%;
+    table-layout: auto;
+}
+
+#star{
+    color: #2d7eff;
 }
 
 table{
     margin: auto;
+}
+
+td{
+    margin: 2px;
+    text-align: left;
 }
 li{
     list-style-position: inside;
@@ -63,9 +101,10 @@ ul{
 section{
     margin: auto;
 }
+
 .card {
-    width: 350px;
-    background: #fff;
+    width: 300px;
+    background: #ffffff;
     border-radius: 5px;
     box-shadow: 0 2px 5px #ccc;
 }
@@ -95,7 +134,7 @@ section{
 }
 .card-link a {
     text-decoration: none;
-    color: #0bd;
+    color: #2d7eff;
     margin: 0 10px;
 }
 .card-link a:hover {
