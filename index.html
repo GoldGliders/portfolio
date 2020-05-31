@@ -2,8 +2,9 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <title>Portfolio</title>
+    <title>Yuta Shintomi</title>
     <link rel="stylesheet" type="text/css" href="/css/style.css">
+    <link rel="shortcut icon" href="/images/favicon.ico">
     <!--w3 icons-->
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -15,53 +16,63 @@
       <h1>Yuta Shintomi's Portfolio</h1>
     </div>
 
-    <div id="about" class="flex">
-      <img src="/images/icon.jpg">
+    <div id="about" class="flex box">
+      <div id="img">
+        <img src="/images/icon.jpg">
+        <p>Gold_Gliders</p>
+      </div>
+
       <div>
         <h2>About</h2>
-        <table>
+        <table cellspacing="9">
           <tr>
-            <td>Name</td>
-            <td>新冨 優太(Yuta Shintomi)</td>
+            <td id="name">Name</td>
+            <td>新冨 優太
+              <br>
+              (Yuta Shintomi)
+            </td>
           </tr>
           <tr>
-            <td>University</td>
-            <td>会津大学 コンピュータ理工学部 コンピュータ理工学科 (University of Aizu)</td>
+            <td id="name">University</td>
+            <td>会津大学 コンピュータ理工学部
+              <br>
+              (University of Aizu)
+            </td>
           </tr>
           <tr>
-            <td>Github</td>
+            <td id="name">Github</td>
             <td><a href="https://github.com/GoldGliders" target="_blank">GoldGliders</a></td>
           </tr>
           <tr>
-            <td>Qiita</td>
+            <td id="name">Qiita</td>
             <td><a href="https://qiita.com/Gold_Gliders" target="_blank">Gold_Gliders</a></td>
           </tr>
           <tr>
-            <td>Twitter</td>
+            <td id="name">Twitter</td>
             <td><a href="https://twitter.com/Gold_Gliders" target="_blank">Gold_Gliders</a></td>
           </tr>
           <tr>
-            <td>Blog</td>
+            <td id="name">Blog</td>
             <td><a href="https://gold-gliders.hatenablog.com/" target="_blank">Gold_Gliders</a></td>
           </tr>
           <tr>
-            <td>AtCoder</td>
+            <td id="name">AtCoder</td>
             <td><a href="https://atcoder.jp/users/Gold_Gliders" target="_blank">Gold_Gliders</a></td>
           </tr>
         </table>
       </div>
     </div>
 
-    <div id="skills">
+    <div id="skills" class="box">
       <h2>Skills</h2>
       <table>
 
         <tr>
           <td>
-            <i class='material-icons'>star</i>
-            <i class='material-icons'>star</i>
-            <i class='material-icons'>star</i>
-            そこそこできる
+            <i class='material-icons' id='star'>star</i>
+            <i class='material-icons' id='star'>star</i>
+            <i class='material-icons' id='star'>star</i>
+            不自由なく使える
           </td>
         </tr>
         <tr>
@@ -75,9 +86,9 @@
 
         <tr>
           <td>
-            <i class='material-icons'>star</i>
-            <i class='material-icons'>star</i>
-            まあまあできる
+            <i class='material-icons' id='star'>star</i>
+            <i class='material-icons' id='star'>star</i>
+            調べながら使える
           </td>
         </tr>
         <tr>
@@ -92,53 +103,64 @@
 
         <tr>
           <td>
-            <i class='material-icons'>star</i>
-            触ったことある
+            <i class='material-icons' id='star'>star</i>
+            使用経験あり
           </td>
         </tr>
         <tr>
           <td>
             <ul>
+              <li>C/C++</li>
+              <li>Java</li>
+              <li>JavaScript</li>
               <li>Docker</li>
               <li>SQL</li>
-              <li>JavaScript</li>
-              <li>C/C++</li>
               <li>Heroku</li>
             </ul>
           </td>
         </tr>
       </table>
-
-      <table>
-        <tr>
-        </tr>
-        <tr>
     </div>
 
-    <div id="works" class="flex">
-      <section class="card">
-        <img class="card-img" src="/images/uoalinebot.png" alt="UoA LINE BOT">
-        <div class="card-content">
-          <h1 class="card-title">会津大学の蔵書検索LINE BOT</h1>
-          <p class="card-text">このLINE BOTに本のバーコードの写真をアップロードすると、会津大学図書館での在所状況を教えてくれます。また新着の本がある場合には通知してくれます。</p>
-        </div>
-        <div class="card-link">
-          <a href="https://gold-gliders.hatenablog.com/entry/2019/12/20/215716" target="_blank">view</a>
-        </div>
-      </section>
+    <div id="works" class="box">
+      <h2>Works</h2>
+      <div class="flex">
+        <section class="card">
+          <img class="card-img" src="/images/uoalinebot.jpg" alt="UoA LINE BOT">
+          <div class="card-content">
+            <h1 class="card-title">会津大学の蔵書検索LINE BOT</h1>
+            <p class="card-text">このLINE BOTに本のバーコードの写真をアップロードすると、会津大学図書館での在書状況を教えてくれます。また新着の本がある場合には通知してくれます。FlaskをHeroku上で動かしています。</p>
+          </div>
+          <div class="card-link">
+            <a href="https://gold-gliders.hatenablog.com/entry/2019/12/20/215716" target="_blank">view</a>
+          </div>
+        </section>
 
-      <section class="card">
-        <img class="card-img" src="images/poreguess.png" alt="">
-        <div class="card-content">
-          <h1 class="card-title">ポレゲス</h1>
-          <p class="card-text">Zoom飲みでできるリモートボードゲームです。兄と共同開発しています。<a href="https://shintomy.hatenablog.com/entry/2020/05/27/123656" target="_blank">開発備忘録（筆者:兄)
-          </a></p>
-        </div>
-        <div class="card-link">
-          <a href="https://www.poreguess.com" target="_blank">view</a>
-        </div>
-      </section>
+        <section class="card">
+          <img class="card-img" src="images/poreguess.jpg" alt="">
+          <div class="card-content">
+            <h1 class="card-title">ポレゲス</h1>
+            <p class="card-text">Zoomでできるオンラインボードゲームです。バックエンドはFlask、フロントエンドはフレームワークなしのJavaScriptで構成されています。兄と共同開発しています。<a href="https://shintomy.hatenablog.com/entry/2020/05/27/123656" target="_blank">開発備忘録（筆者:兄)
+            </a></p>
+          </div>
+          <div class="card-link">
+            <a href="https://www.poreguess.com" target="_blank">view</a>
+          </div>
+        </section>
+
+        <section class="card">
+          <img class="card-img" src="images/icon.jpg" alt="">
+          <div class="card-content">
+            <h1 class="card-title">ポートフォリオ</h1>
+            <p class="card-text">このポートフォリオページのことです。フレームワークなしでHTMLとCSSを直書きしています。レスポンシブなページとなっています。
+            </p>
+          </div>
+          <div class="card-link">
+            <a href="/">view</a>
+          </div>
+        </section>
+
+      </div>
     </div>
-
   </body>
 </html>
